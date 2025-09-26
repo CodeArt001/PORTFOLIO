@@ -16,7 +16,7 @@ const About = () => {
           functional, and user-friendly web applications. My journey into web
           development started with curiosity about how websites work, and today,
           I specialize in{" "}
-          <strong>HTML, CSS, Tailwind CSS, JavaScript, and Reactjs.</strong>
+          <strong id="lang">HTML, CSS, Tailwind CSS, JavaScript, and Reactjs.</strong>
         </p>
         <p>
           I enjoy solving problems, turning ideas into interactive experiences,

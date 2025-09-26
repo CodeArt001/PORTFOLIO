@@ -5,25 +5,11 @@
 }
 
 body {
-  /* position: relative; */
   background-image: linear-gradient(135deg, #8e3e2c 0%, #c01249 100%);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
-  overflow: hidden;
+  height: auto;
 }
-
-/* @keyframes woodgrain {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-} */
 
 .nav-container {
   background-color: whitesmoke;
@@ -56,8 +42,13 @@ body {
   align-items: center;
   gap: 1rem;
   cursor: pointer;
+  list-style: none;
   animation: woodgrain 10s ease infinite;
   transition: all 0.7s;
+}
+.nav-left-link {
+  text-decoration: none;
+  color: black;
 }
 .nav-left:hover {
   color: red;
@@ -139,8 +130,8 @@ body {
   margin-right: 2rem;
 }
 .image2 {
-  width: 14rem;
-  height: 14rem;
+  width: 15rem;
+  height: 15rem;
   border-radius: 70%;
   object-fit: cover;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -192,6 +183,9 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+.footer-container {
+  margin-top: 2rem;
+}
 .git {
   display: flex;
   color: white;
@@ -210,6 +204,7 @@ body {
 .about-text {
   margin: 0.5rem 5rem;
   font-size: 1.1rem;
+  margin-top: 2rem;
 }
 .contact-section {
   display: grid;
@@ -252,6 +247,62 @@ body {
   margin-top: 2rem;
   cursor: pointer;
 }
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+}
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.9rem;
+  border: 0.5rem;
+  border-color: #c01249;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  padding: 0.8rem;
+  border-radius: 1rem;
+  place-content: center;
+  margin: 2rem 5rem;
+  width: 50rem;
+  place-items: center;
+  background-color: whitesmoke;
+  margin: auto;
+}
+.project-container > div {
+  border-radius: 1rem;
+  border: 0.1rem solid #c01249;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  padding: 0.5rem;
+}
+.project-card {
+  border-radius: 1rem;
+  object-fit: cover;
+  border: 0.1rem solid #c01249;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  padding: 0.5rem;
+  transition: box-shadow 0.3s ease;
+}
+.project-image {
+  width: 20rem;
+  height: 9rem;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+.desc {
+  color: gray;
+}
+@keyframes woodgrain {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 
 @media screen and (max-width: 768px) {
   .nav-menu {
@@ -260,8 +311,8 @@ body {
     cursor: pointer;
     gap: 1.5rem;
     top: 70px;
-    left: 50%;
-    transform: translate(-50%);
+    right: 55%;
+    /* transform: translate(-50%); */
 
     align-items: center;
     position: absolute;
@@ -276,9 +327,6 @@ body {
   cursor: pointer;
 }
 
-.download {
-  display: none;
-}
 @media screen and (max-width: 768px) {
   .nav-container,
   .main-container {
@@ -369,5 +417,43 @@ body {
     max-width: 25rem; /* optional limit */
     margin: 0 auto; /* center horizontally */
     display: block;
+  }
+  .download {
+    display: none;
+  }
+  .menu-icon {
+    display: block;
+  }
+  .about-text {
+    min-height: 30rem;
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem;
+  }
+  .about-section {
+    display: block;
+    place-items: center;
+  }
+  .highlight {
+    color: #c01249;
+    font-weight: bolder;
+  }
+  #lang {
+    font-weight: bolder;
+    color: #c01249;
+    transition: all 0.7s;
+    animation: woodgrain 10s ease infinite;
+  }
+  .project-container {
+    display: grid;
+    grid-template-rows: (1, 1);
+    place-content: center;
+    margin: 0;
+    width: 100%;
+  }
+  .project-image {
+    width: 100%;
+    /* height: fit-content; */
   }
 }

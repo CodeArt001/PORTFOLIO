@@ -4,6 +4,8 @@ import Footer from "./component/Footer";
 import Home from "./component/Home";
 import Navbar from "./component/Navbar";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Projects from "./component/Projects";
+import Herosection from "./component/Herosection";
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/portfolio" element={<Herosection />} />
           </Routes>
           <Footer />
         </main>

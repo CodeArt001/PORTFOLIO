@@ -14,12 +14,14 @@ const Navbar = () => {
   return (
     <main>
       <nav className="nav-bar">
-        <div className="nav-left">
-          <p>
-            <img src={share} alt="" className="share-icon" />
-          </p>
-          <p>Projects</p>
-        </div>
+        <Link to="/projects" className="nav-left-link">
+          <div className="nav-left">
+            <p>
+              <img src={share} alt="" className="share-icon" />
+            </p>
+            <p>Projects</p>
+          </div>
+        </Link>
         <ul className={`nav-menu ${menu ? " active" : ""}`}>
           {navMenu.map((item) => (
             <div key={item.id} className="nav-item">
