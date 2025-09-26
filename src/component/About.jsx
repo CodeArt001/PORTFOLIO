@@ -4,8 +4,12 @@ import myPhoto from "../assets/images/Untitled-1.jpg";
 const About = () => {
   return (
     <section className="about-section">
-      <img src={myPhoto} alt="Olaniyan Oluwajomiloju" className="image2" />
-      <div className="about-text">
+      <img
+        src={myPhoto}
+        alt="Olaniyan Oluwajomiloju"
+        className="image2 fade-zoom-in"
+      />
+      <div className="about-text fade-zoom-in">
         <p>
           I’m{" "}
           <span className="highlight">
@@ -16,7 +20,9 @@ const About = () => {
           functional, and user-friendly web applications. My journey into web
           development started with curiosity about how websites work, and today,
           I specialize in{" "}
-          <strong id="lang">HTML, CSS, Tailwind CSS, JavaScript, and Reactjs.</strong>
+          <strong id="lang">
+            HTML, CSS, Tailwind CSS, JavaScript, and Reactjs.
+          </strong>
         </p>
         <p>
           I enjoy solving problems, turning ideas into interactive experiences,

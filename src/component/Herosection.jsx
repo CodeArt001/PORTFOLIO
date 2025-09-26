@@ -24,7 +24,7 @@ const Herosection = () => {
   return (
     <div className="project-container">
       {portfolio.map((items, index) => (
-        <div key={index} className="project-card">
+        <div key={index} className="project-card fade-zoom-in">
           <img
             src={`https://image.thum.io/get/${items.Link}`}
             alt=""

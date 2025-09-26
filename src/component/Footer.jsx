@@ -3,6 +3,7 @@ import whatsapp from "../assets/images/whatsapp3.png";
 import Gmail from "../assets/images/gmail.png";
 import phone from "../assets/images/phone2.png";
 import Facebook from "../assets/images/facebook.png";
+import x from "../assets/images/twitter.png";
 
 const Footer = () => {
   return (
@@ -49,6 +50,14 @@ const Footer = () => {
           >
             <img src={Facebook} alt="" />
             <p> Olaniyan Oluwajomiloju</p>
+          </a>
+          <a
+            href="https://x.com/High_tnsion_ 
+          "
+            className="X-ACT"
+          >
+            <img src={x} alt="" />
+            <p>High_tnsion</p>
           </a>
         </div>
         <div className="footer-boom">
