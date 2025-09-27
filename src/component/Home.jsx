@@ -14,6 +14,19 @@ const Home = () => {
           responsive, and user-friendly web applications. I turn ideas into
           clean, scalable, and functional digital solutions.
         </p>
+        <p className="extra-paragraph">
+          Beyond just coding, I enjoy solving real-world problems and
+          collaborating with teams to deliver meaningful solutions.{" "}
+        </p>
+        <p className="extra-paragraph">
+          My development philosophy is simple: clean code, intuitive design, and
+          a focus on delivering real value to users.
+        </p>
+        <p className="extra-paragraph">
+          Outside of coding, I enjoy learning new technologies and working on
+          personal projects that challenge my creativity.
+        </p>
+
         <div className="button fade-zoom-in">
           <a href="https://wa.me/2349061965442">
             <button className="hire-button">Hire me </button>

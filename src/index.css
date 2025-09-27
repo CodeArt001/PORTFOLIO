@@ -570,4 +570,12 @@ body {
     display: grid;
     grid-template-rows: (1, 1);
   }
+  .extra-paragraph {
+    text-align: center;
+    margin: 0 1rem;
+  }
+}
+.extra-paragraph {
+  /* margin-top: 1rem; */
+  font-size: 20px;
 }
