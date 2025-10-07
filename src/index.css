@@ -338,8 +338,6 @@ body {
     cursor: pointer;
     gap: 1.5rem;
     top: 70px;
-    /* left: 50%; */
-    /* transform: translate(-50%); */
 
     align-items: center;
     position: absolute;
@@ -450,6 +448,7 @@ body {
   }
   .menu-icon {
     display: block;
+    color: wheat;
   }
   .about-text {
     min-height: 30rem;
