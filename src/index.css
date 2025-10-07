@@ -35,6 +35,7 @@ body {
 .nav-menu {
   display: flex;
   gap: 2rem;
+  color: white;
 }
 
 .nav-left {
