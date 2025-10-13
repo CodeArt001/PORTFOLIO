@@ -3,12 +3,38 @@
   padding: 0;
   box-sizing: inherit;
 }
+.projects-title {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.JOIN-SECTION {
+  margin-top: 3rem;
+}
+.about-join {
+  margin-top: 3rem;
+}
+.contact-join {
+  margin-top: 3rem;
+}
 
+html,
 body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
   background-image: linear-gradient(135deg, #8e3e2c 0%, #c01249 100%);
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 100vh;
+  background-attachment: fixed; /* optional, so it stays in place while scrolling */
+}
+.page {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .nav-container {
@@ -18,7 +44,7 @@ body {
   padding-top: 3rem;
   padding-bottom: 2rem; */
   margin: 2rem 5rem;
-  height: 93vh;
+  min-height: 100vh;
   border-radius: 10px;
   box-sizing: border-box;
   box-shadow: 0 5px 15px 5px rgba(0, 0, 0, 0.3);
@@ -101,6 +127,9 @@ body {
   font-size: 20px;
   color: white;
 }
+.hire-button:hover {
+  background-color: #8e3e2c;
+}
 .hire-button {
   inset: all;
   color: white;
@@ -110,6 +139,7 @@ body {
   margin-top: 2rem;
   font-weight: bolder;
   font-size: 1rem;
+  background-color: hover;
 }
 .X-ACT {
   color: white;
@@ -118,7 +148,9 @@ body {
   gap: 0.8rem;
   padding-top: 0.4rem;
 }
-
+.contact-button:hover {
+  background-color: #8e3e2c;
+}
 .contact-button {
   inset: all;
   color: white;
@@ -226,6 +258,7 @@ body {
   display: grid;
   place-items: center; /* centers both horizontally and vertically */
   min-height: 55vh; /* takes full screen height */
+  color: white;
 }
 
 .contact-info {
@@ -285,6 +318,9 @@ body {
   background-color: whitesmoke;
   margin: auto;
 }
+/* .bg {
+  background-image: linear-gradient(135deg, #8e3e2c 0%, #c01249 100%);
+} */
 .project-container > div {
   border-radius: 1rem;
   border: 0.1rem solid #c01249;
@@ -398,6 +434,9 @@ body {
   .footer-contents {
     flex-direction: column;
   }
+  .bg {
+    margin: 1rem 1rem;
+  }
 }
 @media screen and (max-width: 768px) {
   body {
@@ -456,6 +495,7 @@ body {
     width: 100%;
     text-align: center;
     padding: 0.5rem;
+    color: white;
   }
   .about-section {
     display: flex;
@@ -550,6 +590,7 @@ body {
 }
 #lang-container {
   display: flex;
+  /* color: white; */
   justify-content: center;
   animation: slideIn 1s ease-in-out forwards;
 }

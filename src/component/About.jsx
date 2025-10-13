@@ -4,6 +4,7 @@ import HTML from "../assets/images/html.png";
 import css from "../assets/images/CSS.jpeg";
 import script from "../assets/images/java.png";
 import act from "../assets/images/react.png";
+import Contact from "./Contact";
 
 const About = () => {
   return (
@@ -59,6 +60,9 @@ const About = () => {
           working on personal projects that challenge me to grow. I believe in
           lifelong learning and bringing creativity into everything I do.
         </p>
+      </div>
+      <div className="contact-join">
+        <Contact />
       </div>
     </section>
   );

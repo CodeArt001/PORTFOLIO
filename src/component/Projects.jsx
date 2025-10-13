@@ -1,4 +1,5 @@
 import React from "react";
+import About from "./About";
 
 const Projects = () => {
   const project = [
@@ -34,8 +35,8 @@ const Projects = () => {
         {project.map((items, index) => (
           <div key={index} className="project-card fade-zoom-in">
             <img
-              src={`https://image.thum.io/get/${items.link}`}
-              alt="project-thumbnail"
+              src={`https://s.wordpress.com/mshots/v1/${items.link}`}
+              alt={items.Title}
               className="project-image"
             />
             <div>
@@ -48,26 +49,10 @@ const Projects = () => {
               <p className="desc">{items.Desc}</p>
             </div>
           </div>
-
-          // <a
-          //   href={items.link}
-          //   key={index}
-          //   target="_blank"
-          //   rel="noopener noreferrer"
-          //   className="project-card"
-          // >
-          //   <img
-          //     src={`https://image.thum.io/get/${items.link}`}
-          //     alt="project-thumbnail"
-          //     className="project-image"
-          //   />
-          //   <div>
-          //     <a href={items.link}>View Project</a>
-          //     <h1>{items.Title}</h1>
-          //     <p>{items.Desc}</p>
-          //   </div>
-          // </a>
         ))}
+      </div>
+      <div className="about-join">
+        <About />
       </div>
     </section>
   );

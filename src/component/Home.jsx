@@ -40,7 +40,10 @@ const Home = () => {
         </div>
         <img src={myPhoto} alt="ownerImage" className="image" />
       </div>
-      {/* <Herosection /> */}
+      <p className="projects-title">PROJECTS</p>
+      <div>
+        <Herosection />
+      </div>
     </div>
   );
 };
